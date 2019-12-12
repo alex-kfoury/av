@@ -26,7 +26,7 @@ class Ellipse(QtWidgets.QGraphicsEllipseItem):
         self.semi_minor_axe = 150  # idem
         self.semi_major_axe = 150  # idem
         self.rect = QRectF(0, 0, self.semi_major_axe, self.semi_minor_axe)
-        self.rect.
+        self.setPen(QPen(self.line_color, self.line_width))
         self.setBrush(QBrush(self.fill_color, Qt.SolidPattern))
 
         self.setRect(self.rect)
